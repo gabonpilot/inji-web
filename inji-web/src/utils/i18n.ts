@@ -2,11 +2,7 @@ import i18n from "i18next";
 import {initReactI18next} from "react-i18next";
 import en from '../locales/en.json';
 import fr from '../locales/fr.json';
-import ta from '../locales/ta.json';
-import hi from '../locales/hi.json';
-import kn from '../locales/kn.json';
-import ar from '../locales/ar.json';
-import pt from '../locales/pt.json';
+
 import {AppStorage} from "./AppStorage";
 import {
     CredentialTypeDisplayArrayObject,
@@ -14,16 +10,12 @@ import {
     LanguageObject
 } from "../types/data";
 
-const resources = {en, ta, kn, hi, fr, ar, pt};
+const resources = {en, fr};
 
 export const LanguagesSupported: LanguageObject[] = [
     {label: "English", value: 'en'},
-    {label: "தமிழ்", value: 'ta'},
-    {label: "ಕನ್ನಡ", value: 'kn'},
-    {label: "हिंदी", value: 'hi'},
     {label: "Français", value: 'fr'},
-    {label: "عربي", value: 'ar'},
-    {label: "Português", value:'pt'}
+
 ]
 
 export const defaultLanguage = window._env_.DEFAULT_LANG;
